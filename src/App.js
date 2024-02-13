@@ -54,6 +54,7 @@ function App() {
       {
         const newBag = [...prevBag];
         newBag.splice(index, 1);
+        setGold(gold + item.price);
         return newBag;
       }
       return prevBag;
